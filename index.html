@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
   <title>Me and Michelangelo Merisi da Caravaggio</title>
   <script src="https://map.garden/src/index.js" type="module"></script>
 
@@ -32,7 +33,7 @@
       }
 
       async fetchContent(id){
-        const content = await fetch(` https://en.wikipedia.org/w/api.php?action=query&prop=extracts&origin=*&format=json&exintro=&titles=${id}`)
+        const content = await fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=extracts&origin=*&format=json&exintro=&titles=${id}`)
           .then(res => res.json());
 
         console.log(content)
@@ -40,15 +41,46 @@
         const summary = Object.values(content.query.pages)[0];
         this.innerHTML = summary.extract
 
-      }
+        this.innerHTML += `<cite><a href="https://en.wikipedia.org/wiki/${this.src}">Wikipedia</a></cite>`
 
-    
- 
+      }
     
     }
     
     customElements.define('wikipedia-entry', WikipediaEntry)
     
+
+    class WikipediaImage extends HTMLElement {
+      connectedCallback(){
+        this.src = this.getAttribute('src')
+        if(this.src === null){
+          console.error('Wikipedia entry requires source')
+        } else {
+          this.src = this.src.split('/').at(-1)
+        }
+
+        if(this.offsetParent !== null){
+          this.fetchContent(this.src)
+        }
+
+
+        this.innerHTML = `<h1>${this.src}</h1>`
+      }
+
+      async fetchContent(id){
+        const content = await fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=pageimages&origin=*&format=json&exintro=&titles=${id}`)
+          .then(res => res.json());
+
+        const summary = Object.values(content.query.pages)[0];
+        this. innerHTML = `<img src="${summary.thumbnail.source}" alt="${summary.title}" width="${summary.thumbnail.width}" height="${summary.thumbnail.height}">`
+
+
+      }
+    
+    }
+    
+    customElements.define('wikipedia-image', WikipediaImage)
+
     
     
 
@@ -81,9 +113,18 @@
   </script>
   <link rel="stylesheet" type="text/css" href="https://map.garden/src/geo-map.css">
   <style type="text/css">
+
+    :root {
+      --background-color: rgba(255,255,255,0.6);
+      --foreground-color: rgba(0,0,0,1);
+    }
     .marker {
       width: 4em;
       height: 4em;
+    }
+
+    map-information-box a {
+      color: var(--foreground-color);
     }
   </style>
 

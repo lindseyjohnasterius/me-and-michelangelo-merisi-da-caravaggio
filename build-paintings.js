@@ -32,13 +32,14 @@ fs.readdir(dir, async (err, files) => {
 
       >
         <map-marker>
-          <img src="./assets/rapier.svg" class="marker">
+          <wikipedia-image src=${data.wikipedia}></wikipedia-image>
         </map-marker>
         <h1>${data.title}</h1>
         <h2>${data.year}</h2>
         <article class="content">
           ${html_code}
         </article>
+
         <wikipedia-entry src=${data.wikipedia}></wikipedia-entry>
 
       </map-location>
