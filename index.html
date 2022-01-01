@@ -113,10 +113,13 @@
   </script>
   <link rel="stylesheet" type="text/css" href="https://map.garden/src/geo-map.css">
   <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 
     :root {
       --background-color: rgba(243,237,225,0.6);
       --foreground-color: #321f0d;
+      --page-font: 'IM Fell English SC', serif;;
     }
     .marker {
       width: 4em;
@@ -124,11 +127,13 @@
     }
 
     body {
-
+font-family: var(--page-font)
     }
 
     h1, h2, h3, h4 {
-
+font-family: var(--page-font);
+font-weight: 400;
+text-transform: lowercase;
     }
 
     map-information-box {
