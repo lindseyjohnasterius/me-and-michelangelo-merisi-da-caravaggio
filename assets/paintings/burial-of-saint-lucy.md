@@ -5,10 +5,8 @@ seen: 0
 year: 1608
 id: burial-of-saint-lucy
 labels: ["painting", "image"]
-src: https://lh4.googleusercontent.com/syjqOuDQ_0eC2crOaHlSZ_rEWjgzGkL_mMfS_m3GX_pp03T9MALecLoPRlRCU0VNak21QBy33EQx426llxUbNUl0vNRLHohKdKj9f2ZH-ZEOd_qWbiUm7tK5BEXCUN5L
+wikipedia: Burial_of_St._Lucy_(Caravaggio)
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
-
-<img src="https://lh4.googleusercontent.com/syjqOuDQ_0eC2crOaHlSZ_rEWjgzGkL_mMfS_m3GX_pp03T9MALecLoPRlRCU0VNak21QBy33EQx426llxUbNUl0vNRLHohKdKj9f2ZH-ZEOd_qWbiUm7tK5BEXCUN5L" height="200" width="auto" /><br><br>Year: <br>Seen: <br>title: Burial of Saint Lucy

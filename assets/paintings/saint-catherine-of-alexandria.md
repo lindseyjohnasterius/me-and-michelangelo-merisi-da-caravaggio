@@ -5,10 +5,8 @@ seen: May 30, 2017
 year: 1598
 id: saint-catherine-of-alexandria
 labels: ["painting", "image"]
-src: https://lh5.googleusercontent.com/8Ev8kIBfM8mDVScnE1LY-hHVpYfWCmdpQHzhpZPRN9DSTWnOSA7jf1SheiOoOl4U0Xo0aTeY_tJcfwOwLVldhBfX231TrC6iQx4_MEGnUlVo83GrgsTAHz4kDrHy4JQDAA
+wikipedia: https://en.wikipedia.org/wiki/Saint_Catherine_(Caravaggio)
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
-
-<img src="https://lh5.googleusercontent.com/8Ev8kIBfM8mDVScnE1LY-hHVpYfWCmdpQHzhpZPRN9DSTWnOSA7jf1SheiOoOl4U0Xo0aTeY_tJcfwOwLVldhBfX231TrC6iQx4_MEGnUlVo83GrgsTAHz4kDrHy4JQDAA" height="200" width="auto" /><br><br>Year: <br>Seen: <br>title: Saint Catherine of Alexandria

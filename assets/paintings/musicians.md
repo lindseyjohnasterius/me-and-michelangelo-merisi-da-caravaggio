@@ -5,10 +5,8 @@ seen: 0
 year: 1595
 id: musicians
 labels: ["painting", "image"]
-src: https://lh3.googleusercontent.com/bVuSKXuFB87VJRB94wJJgth7HiUDLum9_wCpJWgA39h9YZXZoqZCG6A1eNlgXtnK3MbDTcg_9aPBy7Bt7mb2xh4zBcyZlKQLAvaLYg-7BflBgdru9FHmfYsBSb5ztJly
+wikipedia: https://en.wikipedia.org/wiki/The_Musicians_(Caravaggio)
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
-
-<img src="https://lh3.googleusercontent.com/bVuSKXuFB87VJRB94wJJgth7HiUDLum9_wCpJWgA39h9YZXZoqZCG6A1eNlgXtnK3MbDTcg_9aPBy7Bt7mb2xh4zBcyZlKQLAvaLYg-7BflBgdru9FHmfYsBSb5ztJly" height="200" width="auto" />

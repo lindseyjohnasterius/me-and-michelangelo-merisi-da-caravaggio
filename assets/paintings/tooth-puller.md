@@ -5,13 +5,12 @@ seen: December 26 2012
 year: 1609
 id: tooth-puller
 labels: ["painting", "image"]
-src: https://lh6.googleusercontent.com/oUuA-Pl33YS7Fz-Su1SVF2aGBtzJ3pOyVrZFqurvPVkCb1l0UFvt4fyaHAQ2MgKbOPCdbGKT_fjfnjtVfiTx8wVpFdExENVN9BwddQ3BmqFjmXSQi4xRfsIN28iV95c
+wikipedia: https://en.wikipedia.org/wiki/Paintings_attributed_to_Caravaggio
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
 
-<img src="https://lh6.googleusercontent.com/oUuA-Pl33YS7Fz-Su1SVF2aGBtzJ3pOyVrZFqurvPVkCb1l0UFvt4fyaHAQ2MgKbOPCdbGKT_fjfnjtVfiTx8wVpFdExENVN9BwddQ3BmqFjmXSQi4xRfsIN28iV95c" height="200" width="auto" /><br><br>Year: <br>Seen: <br>title: Tooth Puller
 
 It's important to note this painting is attributed to Caravaggio.
 

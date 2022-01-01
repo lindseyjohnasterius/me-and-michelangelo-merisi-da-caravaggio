@@ -7,6 +7,54 @@
 
   <title>Me and Michelangelo Merisi da Caravaggio</title>
   <script src="https://map.garden/src/index.js" type="module"></script>
+
+  <script type="module">
+    
+
+    
+    
+    
+    class WikipediaEntry extends HTMLElement {
+      connectedCallback(){
+        this.src = this.getAttribute('src')
+        if(this.src === null){
+          console.error('Wikipedia entry requires source')
+        } else {
+          this.src = this.src.split('/').at(-1)
+        }
+
+        if(this.offsetParent !== null){
+          this.fetchContent(this.src)
+        }
+
+
+        this.innerHTML = `<h1>${this.src}</h1>`
+      }
+
+      async fetchContent(id){
+        const content = await fetch(` https://en.wikipedia.org/w/api.php?action=query&prop=extracts&origin=*&format=json&exintro=&titles=${id}`)
+          .then(res => res.json());
+
+        console.log(content)
+
+        const summary = Object.values(content.query.pages)[0];
+        this.innerHTML = summary.extract
+
+      }
+
+    
+ 
+    
+    }
+    
+    customElements.define('wikipedia-entry', WikipediaEntry)
+    
+    
+    
+
+
+  </script>
+
   <script type="module">
     class HTMLPartial extends HTMLElement {
 

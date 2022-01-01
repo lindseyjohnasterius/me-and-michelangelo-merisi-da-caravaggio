@@ -5,10 +5,8 @@ seen: October 14, 2016
 year: 1601
 id: conversion-of-saint-paul-on-the-road-to-damascus
 labels: ["painting", "image"]
-src: https://lh6.googleusercontent.com/4kHvxhnJr-gTf-IPXTqhiad9vGxVgof9JUWX-IIdQ_cxngQSURibKpGj9DXL9UAtd4wNpcgV_lUtzLwfyaQ_alG6ZeUxu4vaWzg776P0QXp7zPfJfAitHctfVnICjLGj
+wikipedia: Conversion_on_the_Way_to_Damascus
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
-
-<img src="https://lh6.googleusercontent.com/4kHvxhnJr-gTf-IPXTqhiad9vGxVgof9JUWX-IIdQ_cxngQSURibKpGj9DXL9UAtd4wNpcgV_lUtzLwfyaQ_alG6ZeUxu4vaWzg776P0QXp7zPfJfAitHctfVnICjLGj" height="200" width="auto" />

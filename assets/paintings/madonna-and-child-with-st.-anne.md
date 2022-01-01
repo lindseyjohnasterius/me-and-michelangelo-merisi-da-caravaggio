@@ -5,10 +5,8 @@ seen: 0
 year: 1606
 id: madonna-and-child-with-st.-anne
 labels: ["painting", "image"]
-src: https://lh3.googleusercontent.com/P40uY0EaNF02g-pqd4DWUElv4tQGZWXDAnrasDwnKqOBKpDgHyIF4XYjejYGDBdgzrHTiHiCMp5vVMytWfnZRkdnwgej-H2YsLLTvFBvJQKM_O_0qVTnr81FT_w2wdAE9A
+wikipedia: https://en.wikipedia.org/wiki/Madonna_and_Child_with_St._Anne_(Dei_Palafrenieri)_(Caravaggio)
 edges:
   - target: caravaggio
     type: AUTHORED_BY
 ---
-
-<img src="https://lh3.googleusercontent.com/P40uY0EaNF02g-pqd4DWUElv4tQGZWXDAnrasDwnKqOBKpDgHyIF4XYjejYGDBdgzrHTiHiCMp5vVMytWfnZRkdnwgej-H2YsLLTvFBvJQKM_O_0qVTnr81FT_w2wdAE9A" height="200" width="auto" /><br><br>Year: <br>Seen: <br>title: Madonna and Child with St. Anne

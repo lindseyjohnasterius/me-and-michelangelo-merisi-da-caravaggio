@@ -5,7 +5,7 @@ seen: 0
 year: 1610
 id: saint-francis-in-prayer
 labels: ["painting", "image"]
-src: None
+wikipedia: https://en.wikipedia.org/wiki/Saint_Francis_in_Prayer_(Caravaggio)
 edges:
   - target: caravaggio
     type: AUTHORED_BY

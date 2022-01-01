@@ -18,7 +18,7 @@ fs.readdir(dir, async (err, files) => {
     const yaml = matter.read(`${dir}/${file}`);
     const data = yaml.data
 
-    const htmlCode = parser.parse(yaml.content).innerHTML;
+    const html_code = parser.parse(yaml.content).innerHTML;
 
 
     PAINTINGS += `
@@ -28,6 +28,7 @@ fs.readdir(dir, async (err, files) => {
         zoom=18
         bearing=15
         pitch=30
+        id=${data.id}
 
       >
         <map-marker>
@@ -35,6 +36,10 @@ fs.readdir(dir, async (err, files) => {
         </map-marker>
         <h1>${data.title}</h1>
         <h2>${data.year}</h2>
+        <article class="content">
+          ${html_code}
+        </article>
+        <wikipedia-entry src=${data.wikipedia}></wikipedia-entry>
 
       </map-location>
     `
