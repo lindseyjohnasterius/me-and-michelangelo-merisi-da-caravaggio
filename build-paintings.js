@@ -14,8 +14,6 @@ fs.readdir(dir, async (err, files) => {
       throw err;
   }
 
-  // files object contains all files names
-  // log them on console
   files.forEach(async file => {
     const yaml = matter.read(`${dir}/${file}`);
     const data = yaml.data
@@ -32,11 +30,12 @@ fs.readdir(dir, async (err, files) => {
         pitch=30
 
       >
-      <map-marker>
+        <map-marker>
+          <img src="./assets/rapier.svg" class="marker">
+        </map-marker>
         <h1>${data.title}</h1>
         <h2>${data.year}</h2>
-      </map-marker>
-        ${htmlCode}
+
       </map-location>
     `
   })
